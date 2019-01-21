@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Add Users</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Users <span class="text-muted h5">By Mohammad Tsh</span></h1>
+        <img src="images/logo_black_big_english.png" class="rounded mx-auto d-block" alt="">
+        <form id="form">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Enter Your Firstname">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="lastname">LastName</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Enter Your Lastname">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I Accept Terms Of Use</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Add User</button>
+         </form>
+         <br><hr><br>
+         <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <br><br><br> 
+<script src="app.js"></script>
+</body>
+</html>
